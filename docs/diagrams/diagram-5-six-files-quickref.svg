@@ -1,0 +1,48 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>The Six Files, at a Glance</title>
+<desc>Six governance files and the one question each answers: Status answers where things stand and what's next. Backlog answers what's broken. Decisions answers why a choice was made. Session log answers what happened. Risks and known issues answers what could go wrong. Memory index answers where to find deeper context.</desc>
+<defs>
+  <filter id="sk5" x="-20%" y="-20%" width="140%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" result="n" seed="41"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="4.5"/>
+  </filter>
+</defs>
+<rect x="0" y="0" width="900" height="460" fill="#f8f2e3"/>
+<text x="450" y="40" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="24" fill="#33291e" font-weight="bold">The Six Files, at a Glance</text>
+
+<g filter="url(#sk5)">
+  <rect x="30" y="80" width="270" height="100" rx="12" fill="#fdf0d8" stroke="#b5651d" stroke-width="3"/>
+  <rect x="315" y="80" width="270" height="100" rx="12" fill="#fffaf0" stroke="#33291e" stroke-width="2.5"/>
+  <rect x="600" y="80" width="270" height="100" rx="12" fill="#fffaf0" stroke="#33291e" stroke-width="2.5"/>
+  <rect x="30" y="200" width="270" height="100" rx="12" fill="#fffaf0" stroke="#33291e" stroke-width="2.5"/>
+  <rect x="315" y="200" width="270" height="100" rx="12" fill="#fffaf0" stroke="#33291e" stroke-width="2.5"/>
+  <rect x="600" y="200" width="270" height="100" rx="12" fill="#fffaf0" stroke="#33291e" stroke-width="2.5"/>
+</g>
+
+<text x="165" y="115" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="16" fill="#8a5a2b" font-weight="bold">STATUS</text>
+<text x="165" y="140" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="12" fill="#6b4423">Where do things stand?</text>
+<text x="165" y="158" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="12" fill="#6b4423">What's the exact next step?</text>
+
+<text x="450" y="115" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="16" fill="#33291e" font-weight="bold">BACKLOG</text>
+<text x="450" y="140" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="12" fill="#5a4a35">What's broken or</text>
+<text x="450" y="158" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="12" fill="#5a4a35">unfinished, how urgent?</text>
+
+<text x="735" y="115" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="16" fill="#33291e" font-weight="bold">DECISIONS</text>
+<text x="735" y="140" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="12" fill="#5a4a35">Why this, not that?</text>
+<text x="735" y="158" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="12" fill="#5a4a35">What did we reject?</text>
+
+<text x="165" y="235" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="16" fill="#33291e" font-weight="bold">SESSION LOG</text>
+<text x="165" y="260" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="12" fill="#5a4a35">What actually happened,</text>
+<text x="165" y="278" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="12" fill="#5a4a35">session by session?</text>
+
+<text x="450" y="235" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="16" fill="#33291e" font-weight="bold">RISKS /</text>
+<text x="450" y="253" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="16" fill="#33291e" font-weight="bold">KNOWN ISSUES</text>
+<text x="450" y="275" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="12" fill="#5a4a35">What could still go wrong?</text>
+
+<text x="735" y="235" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="16" fill="#33291e" font-weight="bold">MEMORY INDEX</text>
+<text x="735" y="260" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="12" fill="#5a4a35">Where's the deeper</text>
+<text x="735" y="278" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="12" fill="#5a4a35">context on this?</text>
+
+<text x="450" y="345" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="16" fill="#33291e" font-style="italic" font-weight="bold">Read first. Write last. Verify before you trust it.</text>
+<text x="450" y="395" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="13" fill="#8a5a2b">Plain markdown. Checked into git. Read by humans and AI agents alike.</text>
+</svg>

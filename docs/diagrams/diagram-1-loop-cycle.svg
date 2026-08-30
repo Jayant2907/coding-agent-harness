@@ -1,0 +1,46 @@
+<svg viewBox="0 0 800 620" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>The Loop Tick Cycle</title>
+<desc>A four-step cycle: read the state, do the smallest step, verify it worked, report and update state, then repeat. A branch shows parking and reporting to a human when a stop condition is met.</desc>
+<defs>
+  <filter id="sketchy" x="-20%" y="-20%" width="140%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" result="noise" seed="7"/>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="5"/>
+  </filter>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+    <path d="M0,0 L8,3 L0,6 Z" fill="#8a5a2b"/>
+  </marker>
+</defs>
+<rect x="0" y="0" width="800" height="620" fill="#f8f2e3"/>
+<text x="400" y="42" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="26" fill="#33291e" font-weight="bold">The Loop Tick Cycle</text>
+
+<g filter="url(#sketchy)">
+  <rect x="270" y="70" width="260" height="90" rx="14" fill="#fffaf0" stroke="#33291e" stroke-width="3"/>
+  <rect x="540" y="240" width="230" height="90" rx="14" fill="#fffaf0" stroke="#33291e" stroke-width="3"/>
+  <rect x="270" y="410" width="260" height="90" rx="14" fill="#fffaf0" stroke="#33291e" stroke-width="3"/>
+  <rect x="30" y="240" width="230" height="90" rx="14" fill="#fffaf0" stroke="#33291e" stroke-width="3"/>
+
+  <path d="M 500 160 C 560 190, 590 200, 620 240" fill="none" stroke="#8a5a2b" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M 640 330 C 610 370, 560 390, 520 410" fill="none" stroke="#8a5a2b" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M 300 460 C 220 440, 170 380, 150 330" fill="none" stroke="#8a5a2b" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M 150 240 C 180 200, 220 170, 280 150" fill="none" stroke="#8a5a2b" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <path d="M 400 500 C 400 540, 460 555, 520 560" fill="none" stroke="#b5651d" stroke-width="3" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+  <rect x="520" y="530" width="230" height="70" rx="12" fill="#fdf0d8" stroke="#b5651d" stroke-width="3"/>
+</g>
+
+<text x="400" y="108" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="17" fill="#33291e" font-weight="bold">1. Read state + goal file</text>
+<text x="400" y="132" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="13" fill="#5a4a35">where did the last tick leave off?</text>
+
+<text x="655" y="278" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="17" fill="#33291e" font-weight="bold">2. Do the smallest</text>
+<text x="655" y="298" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="17" fill="#33291e" font-weight="bold">next step</text>
+
+<text x="400" y="448" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="17" fill="#33291e" font-weight="bold">3. Verify it worked</text>
+<text x="400" y="470" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="13" fill="#5a4a35">test, build, read-only check</text>
+
+<text x="145" y="278" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="17" fill="#33291e" font-weight="bold">4. Report +</text>
+<text x="145" y="298" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="17" fill="#33291e" font-weight="bold">update state</text>
+
+<text x="80" y="200" font-family="'Segoe Print','Bradley Hand',cursive" font-size="13" fill="#8a5a2b" font-style="italic">next tick →</text>
+<text x="635" y="565" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="15" fill="#8a5a2b" font-weight="bold">Park &amp; wait for you</text>
+<text x="635" y="585" text-anchor="middle" font-family="'Segoe Print','Bradley Hand',cursive" font-size="12" fill="#8a5a2b">(stop condition met)</text>
+</svg>
