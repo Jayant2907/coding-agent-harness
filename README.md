@@ -4,6 +4,12 @@ A **coding agent harness** for humans and AI agents to collaborate, develop, and
 
 Built for: Claude Code, Cursor, Codex, and similar coding agents. Works for one person or two people each running their own agent team.
 
+<p align="center">
+  <img src="docs/diagrams/six-files-at-a-glance.png" alt="The Six Files, at a Glance — Status, Backlog, Decisions, Session log, Risks, Memory index" width="900" />
+</p>
+
+<p align="center"><em>Six plain markdown files. Humans and agents both read first, write last.</em></p>
+
 ## Why this exists
 
 Coding agents are fast. Teams still break in the same three places:
@@ -48,6 +54,12 @@ coding-agent-harness/
 
 **The rule:** read first, write last — and spot-check Status against the real code before you trust it.
 
+<p align="center">
+  <img src="docs/diagrams/read-first-write-last.png" alt="The Read-First, Write-Last Ritual flowchart" width="720" />
+</p>
+
+<p align="center"><em>Every session: read Status → verify against the code → do the work → write Status / Session log / Backlog.</em></p>
+
 ## How two people collaborate
 
 Each person can run their own orchestrator / agent session. You stay in sync through git, not meetings:
@@ -63,12 +75,24 @@ Each person can run their own orchestrator / agent session. You stay in sync thr
 
 One finishes a session → writes status + session log. The other opens the same files tomorrow and continues. No “did you already fix that?” tax.
 
+<p align="center">
+  <img src="docs/diagrams/files-are-the-meeting.png" alt="The Files Are the Meeting — shared git-tracked memory between two people and their agent teams" width="900" />
+</p>
+
+<p align="center"><em>The files are the meeting. Status is the standup. Backlog is the shared to-do.</em></p>
+
 ## How parallel agents stay safe
 
 1. **One orchestrator** plans, delegates, and reviews — it almost never writes feature code itself.
 2. **Each build agent gets a private git worktree** (own branch) so they can edit “the same files” without colliding.
 3. **Review is a law** — nothing merges until an independent check against real source and behavior.
 4. **Files are memory** — discoveries go to `BACKLOG.md`; position lives in `STATUS.md`.
+
+<p align="center">
+  <img src="docs/diagrams/orchestration-loop.png" alt="The Orchestration Loop — decompose, delegate to specialized agents, collect reports, review before merge" width="900" />
+</p>
+
+<p align="center"><em>Orchestrator holds the board. Subagents research, build, and review in parallel.</em></p>
 
 ## Unattended / overnight runs
 
@@ -77,20 +101,19 @@ Use `GOAL.md` + `CONTRACT.md` with your agent’s loop (e.g. Claude Code `/loop`
 - Goal file = phases and checkboxes (tick only when **verified**)
 - Contract = the fence: what it may never do, where it may edit, when to stop and wait for a human
 
-See `examples/loop-prompts.md` for starter prompts.
+See [`examples/loop-prompts.md`](examples/loop-prompts.md) for starter prompts.
 
-## Diagrams
+<p align="center">
+  <img src="docs/diagrams/loop-tick-cycle.png" alt="The Loop Tick Cycle — read state, do smallest step, verify, report, or park for a human" width="800" />
+</p>
 
-| Diagram | File |
-|---|---|
-| Loop tick cycle | [`docs/diagrams/loop-tick-cycle.png`](docs/diagrams/loop-tick-cycle.png) |
-| 7-point contract | [`docs/diagrams/seven-point-contract.png`](docs/diagrams/seven-point-contract.png) |
-| Orchestration loop | [`docs/diagrams/orchestration-loop.png`](docs/diagrams/orchestration-loop.png) |
-| Files are the meeting | [`docs/diagrams/files-are-the-meeting.png`](docs/diagrams/files-are-the-meeting.png) |
-| Six files at a glance | [`docs/diagrams/six-files-at-a-glance.png`](docs/diagrams/six-files-at-a-glance.png) |
-| Read-first, write-last | [`docs/diagrams/read-first-write-last.png`](docs/diagrams/read-first-write-last.png) |
+<p align="center"><em>Each tick: read state → do the smallest next step → verify → report. Stop conditions park for you.</em></p>
 
-SVG sources are in the same folder.
+<p align="center">
+  <img src="docs/diagrams/seven-point-contract.png" alt="Before You Walk Away: 7 Questions — cadence, guardrails, scope, action, budget, stop, report" width="900" />
+</p>
+
+<p align="center"><em>Answer these seven once. The loop obeys them every tick.</em></p>
 
 ## Topics this repo is for
 
