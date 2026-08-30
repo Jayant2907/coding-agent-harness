@@ -1,17 +1,14 @@
 # Running Agents Overnight
 
-Templates and diagrams for running Claude Code (or any coding agent) unattended — with a goal file, a 7-point contract, an orchestrator team, and six git-tracked memory files.
+Templates and diagrams for running Claude Code (or any coding agent) unattended — with a goal file, a 7-point contract, an orchestrator team, and six git-tracked memory files for human + agent collaboration.
 
 Companion to the Medium series **Running Agents Overnight**.
 
-| Medium post | What it covers |
+| Post | Link |
 |---|---|
-| Part 1 — *How I Taught Claude Code to Work the Night Shift* | `/loop`, `GOAL.md`, the 7-point contract |
-| Part 2 — *I Run a Team of AI Agents With One Orchestrator* | Orchestrator, worktrees, mandatory review |
-| Part 3 — *The Real Problem With AI Agents Isn't Intelligence. It's Memory.* | Shared files as memory |
-| Companion — *The 6 Files That Let Humans and AI Agents Actually Collaborate* | Steal-this file kit |
-
-*(Paste Medium URLs here after publishing.)*
+| Part 1 — How I Taught Claude Code to Work the Night Shift | https://medium.com/@gangwanijayant737/how-i-taught-claude-code-to-work-the-night-shift-bb1b555ef734 |
+| Part 2 — I Run a Team of AI Agents With One Orchestrator | https://medium.com/@gangwanijayant737/i-run-a-team-of-ai-agents-with-one-orchestrator-heres-what-keeps-it-from-turning-into-chaos-ed59dbf73b12 |
+| How Humans and AI Agents Actually Collaborate (Without Meetings) | *(paste after publishing)* |
 
 ## Steal this
 
@@ -34,10 +31,6 @@ templates/
 ## Diagrams
 
 SVG (GitHub) and PNG (Medium / LinkedIn) live in [`docs/diagrams/`](docs/diagrams/).
-
-## Medium drafts
-
-Clean, publish-ready copies (teasers stripped, image slots marked) are in [`medium/`](medium/).
 
 ## License
 

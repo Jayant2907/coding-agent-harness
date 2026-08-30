@@ -1,3 +1,13 @@
 .DS_Store
 Thumbs.db
 *.log
+
+# Local Medium publishing helpers (not part of the steal-this kit)
+medium/*-ascii.txt
+medium/*-clean.txt
+medium/*-paste.html
+medium/*-images/
+medium/build_insert.py
+medium/insert-expr.txt
+medium/set-clipboard.ps1
+medium/collab-combined-ascii.txt
